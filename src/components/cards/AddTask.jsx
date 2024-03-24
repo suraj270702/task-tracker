@@ -61,7 +61,7 @@ const AddTask = ({ state, setState,tasks,setTasks }) => {
             <input
              value={newTask}
              onChange={(e)=>setNewTask(e.target.value)}
-             className="w-full  py-2.5 rounded-lg pl-4  bg-transparent placeholder:text-white/80  bg-slate-800 text-white/80"
+             className="w-full  py-2.5 rounded-lg pl-4   placeholder:text-white/80  bg-slate-800 text-white/80"
               placeholder="Enter a Task"
             />
           </div>
@@ -72,7 +72,7 @@ const AddTask = ({ state, setState,tasks,setTasks }) => {
             <textarea
             value={description}
             onChange={(e)=>setDescription(e.target.value)}
-            className="w-full  py-2.5 rounded-lg pl-4  bg-transparent placeholder:text-white/80  bg-slate-800 text-white/80"
+            className="w-full  py-2.5 rounded-lg pl-4   placeholder:text-white/80  bg-slate-800 text-white/80"
               placeholder="Enter a Description"
             />
           </div>
@@ -81,13 +81,13 @@ const AddTask = ({ state, setState,tasks,setTasks }) => {
             <input
             value={assignee}
             onChange={(e)=>setAssignee(e.target.value)}
-            className="w-full  py-2.5 rounded-lg pl-4  bg-transparent placeholder:text-white/80  bg-slate-800 text-white/80"
+            className="w-full  py-2.5 rounded-lg pl-4   placeholder:text-white/80  bg-slate-800 text-white/80"
               placeholder="Enter a Assignee Name"
             />
           </div>
           <div className="flex flex-col gap-y-1 mb-3 w-full">
             <label className="text-md text-white/80 font-medium">Priority</label>
-            <select value={priority} onChange={(e)=>setPriority(e.target.value)} className="w-full  py-2.5 pl-4 rounded-lg  bg-transparent bg-slate-800 text-white/80">
+            <select value={priority} onChange={(e)=>setPriority(e.target.value)} className="w-full  py-2.5 pl-4 rounded-lg  bg-slate-800 text-white/80">
               
               <option value="high" >High</option>
               <option value="low">Low</option>

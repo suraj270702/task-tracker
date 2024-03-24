@@ -50,7 +50,7 @@ const EditTask = ({ state, setState,tasks,setTasks,singleTask,setSingleTask }) =
             <input
              //value={task}
              defaultValue={singleTask.task}
-             className="w-full  py-2.5 rounded-lg pl-4  bg-transparent placeholder:text-white/80  bg-slate-800 text-white/80"
+             className="w-full  py-2.5 rounded-lg pl-4   placeholder:text-white/80  bg-slate-800 text-white/80"
               placeholder="Enter a Task"
               disabled={true}
             />
@@ -63,7 +63,7 @@ const EditTask = ({ state, setState,tasks,setTasks,singleTask,setSingleTask }) =
             //value={description}
             defaultValue={singleTask.description}
            
-            className="w-full  py-2.5 rounded-lg pl-4  bg-transparent placeholder:text-white/80  bg-slate-800 text-white/80"
+            className="w-full  py-2.5 rounded-lg pl-4   placeholder:text-white/80  bg-slate-800 text-white/80"
               placeholder="Enter a Description"
               disabled={true}
             />
@@ -74,14 +74,14 @@ const EditTask = ({ state, setState,tasks,setTasks,singleTask,setSingleTask }) =
             //value={assignee}
             defaultValue={singleTask.assignee}
             onChange={(e)=>setAssignee(e.target.value)}
-            className="w-full  py-2.5 rounded-lg pl-4  bg-transparent placeholder:text-white/80  bg-slate-800 text-white/80"
+            className="w-full  py-2.5 rounded-lg pl-4   placeholder:text-white/80  bg-slate-800 text-white/80"
               placeholder="Enter a Assignee Name"
               disabled={true}
             />
           </div>
           <div className="flex flex-col gap-y-1 mb-3 w-full">
             <label className="text-md text-white/80 font-medium">Priority</label>
-            <select value={priority}  onChange={(e)=>setPriority(e.target.value)} className="w-full  py-2.5 pl-4 rounded-lg  bg-transparent bg-slate-800 text-white/80">
+            <select value={priority}  onChange={(e)=>setPriority(e.target.value)} className="w-full  py-2.5 pl-4 rounded-lg   bg-slate-800 text-white/80">
               
               <option value="high">High</option>
               <option value="low">Low</option>
@@ -90,7 +90,7 @@ const EditTask = ({ state, setState,tasks,setTasks,singleTask,setSingleTask }) =
           </div>
           <div className="flex flex-col gap-y-1 mb-3 w-full">
             <label className="text-md text-white/80 font-medium">Status</label>
-            <select  value={status} onChange={(e)=>setStatus(e.target.value)} className="w-full  py-2.5 pl-4 rounded-lg  bg-transparent bg-slate-800 text-white/80">
+            <select  value={status} onChange={(e)=>setStatus(e.target.value)} className="w-full  py-2.5 pl-4 rounded-lg   bg-slate-800 text-white/80">
               
               <option value="pending">Pending</option>
               <option value="in progress">In Progress</option>

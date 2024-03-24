@@ -169,13 +169,13 @@ const Home = () => {
                   <input
                     value={assigneeName}
                     onChange={(e) => setAssigneeName(e.target.value)}
-                    className="w-full lg:w-[200px] py-2.5 rounded-lg pl-4  bg-transparent placeholder:text-white/80  bg-slate-800 text-white/80"
+                    className="w-full lg:w-[200px] py-2.5 rounded-lg pl-4 placeholder:text-white/80  bg-slate-800 text-white/80"
                     placeholder="assignee name"
                   />
                   <select
                     value={priority === "priority" ? "" : priority}
                     onChange={(e) => setPriority(e.target.value)}
-                    className="w-full lg:w-[200px] py-2.5 pl-4 rounded-lg  bg-transparent bg-slate-800 text-white/80"
+                    className="w-full lg:w-[200px] py-2.5 pl-4 rounded-lg  bg-slate-800 text-white/80"
                   >
                     <option value="" hidden>
                       priority
@@ -197,7 +197,7 @@ const Home = () => {
                 <h1 className="text-[15px] md:text-[20px] font-medium text-white/80">
                   Sort By
                 </h1>
-                <select value={sort} onChange={(e)=>setSort(e.target.value)} className="w-full lg:w-[200px] py-2.5 pl-4 rounded-lg  bg-transparent bg-slate-800 text-white/80">
+                <select value={sort} onChange={(e)=>setSort(e.target.value)} className="w-full lg:w-[200px] py-2.5 pl-4 rounded-lg  bg-slate-800 text-white/80">
                   
                   <option value="high-to-low">High to Low</option>
                   <option value="low-to-high">Low to High</option>
